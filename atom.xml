@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Wisansiiz的个人博客</title>
+  <title>Wisansiiz&#39;s Blog</title>
   
-  <subtitle>欢迎来到Wisansiiz的个人博客</subtitle>
+  <subtitle>学会积累</subtitle>
   <link href="https://wisansiiz.github.io/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.github.io/"/>
