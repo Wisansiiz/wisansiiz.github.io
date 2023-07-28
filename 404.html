@@ -52,13 +52,451 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Wisansiiz's Blog" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Wisansiiz's Blog" type="application/atom+xml">
 
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+   <style type="text/css" lang="css">
+    #loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #8a8686;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+
+    #loading-container {
+        border: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #loading-container {
+        --hue: 223;
+        --bg: hsl(var(--hue), 10%, 90%);
+        --fg: hsl(var(--hue), 10%, 10%);
+        --primary: hsl(var(--hue), 90%, 55%);
+        --primary-l: hsl(var(--hue), 90%, 65%);
+        --primary-d: hsl(var(--hue), 90%, 45%);
+        --white: hsl(var(--hue), 10%, 100%);
+        --white-d: hsl(var(--hue), 10%, 45%);
+        font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+    }
+
+    #loading-container {
+        background-color: var(--bg);
+        color: var(--fg);
+        font: 1em/1.5 sans-serif;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #282C34;
+    }
+
+    .book,
+    .book__pg-shadow,
+    .book__pg {
+        animation: cover 7s ease-in-out infinite;
+    }
+
+    .book {
+        background-color: var(--primary-l);
+        border-radius: 0.25em;
+        box-shadow:
+            0 0.25em 0.5em hsla(0, 0%, 0%, 0.3),
+            0 0 0 0.25em var(--primary) inset;
+        padding: 0.25em;
+        perspective: 37.5em;
+        position: relative;
+        width: 8em;
+        height: 6em;
+        transform: translate3d(0, 0, 0);
+        transform-style: preserve-3d;
+    }
+
+    .book__pg-shadow,
+    .book__pg {
+        position: absolute;
+        left: 0.25em;
+        width: calc(50% - 0.25em);
+    }
+
+    .book__pg-shadow {
+        animation-name: shadow;
+        background-image: linear-gradient(-45deg, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, 0.3) 50%);
+        filter: blur(0.25em);
+        top: calc(100% - 0.25em);
+        height: 3.75em;
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+
+    .book__pg {
+        animation-name: pg1;
+        background-color: var(--white);
+        background-image: linear-gradient(90deg, hsla(var(--hue), 10%, 90%, 0) 87.5%, hsl(var(--hue), 10%, 90%));
+        height: calc(100% - 0.5em);
+        transform-origin: 100% 50%;
+    }
+
+    .book__pg--2,
+    .book__pg--3,
+    .book__pg--4 {
+        background-image:
+            repeating-linear-gradient(hsl(var(--hue), 10%, 10%) 0 0.125em, hsla(var(--hue), 10%, 10%, 0) 0.125em 0.5em),
+            linear-gradient(90deg, hsla(var(--hue), 10%, 90%, 0) 87.5%, hsl(var(--hue), 10%, 90%));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.5em 4.125em, 100% 100%;
+    }
+
+    .book__pg--2 {
+        animation-name: pg2;
+    }
+
+    .book__pg--3 {
+        animation-name: pg3;
+    }
+
+    .book__pg--4 {
+        animation-name: pg4;
+    }
+
+    .book__pg--5 {
+        animation-name: pg5;
+    }
+
+    /* Dark theme */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: hsl(var(--hue), 10%, 30%);
+            --fg: hsl(var(--hue), 10%, 90%);
+        }
+    }
+
+    /* Animations */
+    @keyframes cover {
+
+        from,
+        5%,
+        45%,
+        55%,
+        95%,
+        to {
+            animation-timing-function: ease-out;
+            background-color: var(--primary-l);
+        }
+
+        10%,
+        40%,
+        60%,
+        90% {
+            animation-timing-function: ease-in;
+            background-color: var(--primary-d);
+        }
+    }
+
+    @keyframes shadow {
+
+        from,
+        10.01%,
+        20.01%,
+        30.01%,
+        40.01% {
+            animation-timing-function: ease-in;
+            transform: translate3d(0, 0, 1px) scaleY(0) rotateY(0);
+        }
+
+        5%,
+        15%,
+        25%,
+        35%,
+        45%,
+        55%,
+        65%,
+        75%,
+        85%,
+        95% {
+            animation-timing-function: ease-out;
+            transform: translate3d(0, 0, 1px) scaleY(0.2) rotateY(90deg);
+        }
+
+        10%,
+        20%,
+        30%,
+        40%,
+        50%,
+        to {
+            animation-timing-function: ease-out;
+            transform: translate3d(0, 0, 1px) scaleY(0) rotateY(180deg);
+        }
+
+        50.01%,
+        60.01%,
+        70.01%,
+        80.01%,
+        90.01% {
+            animation-timing-function: ease-in;
+            transform: translate3d(0, 0, 1px) scaleY(0) rotateY(180deg);
+        }
+
+        60%,
+        70%,
+        80%,
+        90%,
+        to {
+            animation-timing-function: ease-out;
+            transform: translate3d(0, 0, 1px) scaleY(0) rotateY(0);
+        }
+    }
+
+    @keyframes pg1 {
+
+        from,
+        to {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.4deg);
+        }
+
+        10%,
+        15% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(180deg);
+        }
+
+        20%,
+        80% {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(180deg);
+        }
+
+        85%,
+        90% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(180deg);
+        }
+    }
+
+    @keyframes pg2 {
+
+        from,
+        to {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        }
+
+        5%,
+        10% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        }
+
+        20%,
+        25% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        }
+
+        30%,
+        70% {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        }
+
+        75%,
+        80% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        }
+
+        90%,
+        95% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        }
+    }
+
+    @keyframes pg3 {
+
+        from,
+        10%,
+        90%,
+        to {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        }
+
+        15%,
+        20% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        }
+
+        30%,
+        35% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        }
+
+        40%,
+        60% {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        }
+
+        65%,
+        70% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        }
+
+        80%,
+        85% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        }
+    }
+
+    @keyframes pg4 {
+
+        from,
+        20%,
+        80%,
+        to {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        }
+
+        25%,
+        30% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        }
+
+        40%,
+        45% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        }
+
+        50% {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        }
+
+        55%,
+        60% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        }
+
+        70%,
+        75% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        }
+    }
+
+    @keyframes pg5 {
+
+        from,
+        30%,
+        70%,
+        to {
+            animation-timing-function: ease-in;
+            background-color: var(--white-d);
+            transform: translate3d(0, 0, 1px) rotateY(0);
+        }
+
+        35%,
+        40% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0deg);
+        }
+
+        50% {
+            animation-timing-function: ease-in-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(179.6deg);
+        }
+
+        60%,
+        65% {
+            animation-timing-function: ease-out;
+            background-color: var(--white);
+            transform: translate3d(0, 0, 1px) rotateY(0);
+        }
+    }
+</style>
+<script>
+    (function () {
+        const loaded = function () {
+            setTimeout(function () {
+                const loader = document.getElementById("loading-container");
+                loader.className = "fadeout";//使用渐隐的方法淡出loading page
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 1400);
+            }, 800);//强制显示loading page 1s  
+        };
+        loaded();
+    })()
+</script>
 
 <body>
+
+	
+        <div id="loading-container">
+            <div class="book">
+                <div class="book__pg-shadow"></div>
+                <div class="book__pg"></div>
+                <div class="book__pg book__pg--2"></div>
+                <div class="book__pg book__pg--3"></div>
+                <div class="book__pg book__pg--4"></div>
+                <div class="book__pg book__pg--5"></div>
+            </div>
+        </div>
+    
+	
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -237,75 +675,12 @@
         </li>
         
         
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
     </ul>
 </div>
 
 
         </div>
 
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
         
     </nav>
 
@@ -342,68 +717,12 @@
 
 
     <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
     </script>
 
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
     
 
     <div class="container row center-align"
@@ -679,6 +998,14 @@ $(function () {
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
+    
+        <!-- <script src='https://unpkg.com/mermaid@latest/dist/mermaid.min.js'></script> -->
+        <script src='/libs/mermaid/mermaid.min.js'></script>
+        <script>
+          if (window.mermaid) {
+            mermaid.initialize({theme: 'forest'});
+          }
+        </script>
     
 
     

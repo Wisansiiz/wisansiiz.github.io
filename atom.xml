@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.top/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.top/"/>
-  <updated>2023-07-27T04:59:16.375Z</updated>
+  <updated>2023-07-28T08:53:09.650Z</updated>
   <id>https://wisansiiz.top/</id>
   
   <author>
@@ -17,15 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test_my_site</title>
-    <link href="https://wisansiiz.top/2023/07/27/test-my-site/"/>
-    <id>https://wisansiiz.top/2023/07/27/test-my-site/</id>
-    <published>2023-07-27T04:59:16.000Z</published>
-    <updated>2023-07-27T04:59:16.375Z</updated>
+    <title>go后端框架</title>
+    <link href="https://wisansiiz.top/2023/07/28/go-hou-duan-kuang-jia/"/>
+    <id>https://wisansiiz.top/2023/07/28/go-hou-duan-kuang-jia/</id>
+    <published>2023-07-28T04:57:12.497Z</published>
+    <updated>2023-07-28T08:53:09.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;Go&lt;/h1&gt;
+&lt;h2 id=&quot;Gin&quot;&gt;Gin&lt;/h2&gt;
+&lt;h3 id=&quot;安装gin&quot;&gt;安装gin&lt;/h3&gt;
+&lt;pre class=&quot; language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;go get -u</summary>
+        
+      
     
     
     
+    <category term="golang" scheme="https://wisansiiz.top/categories/golang/"/>
     
+    
+    <category term="GO" scheme="https://wisansiiz.top/tags/GO/"/>
+    
+    <category term="后端框架" scheme="https://wisansiiz.top/tags/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
