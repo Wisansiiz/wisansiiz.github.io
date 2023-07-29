@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Nodejs安装教程</title>
+      <link href="/2023/07/29/nodejs-an-zhuang-jiao-cheng/"/>
+      <url>/2023/07/29/nodejs-an-zhuang-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1>Nodejs</h1><h3 id="下载">下载</h3><p>下载地址：<a href="https://nodejs.org/zh-cn/download"> Node.js (nodejs.org)</a></p><img src="/images/Nodejs安装教程.assets/image-20230729135801511.png" alt="image-20230729135801511" style="zoom:80%;"><p>下载对应版本即可</p><h3 id="安装">安装</h3><p>选择安装路径：</p><img src="/images/Nodejs安装教程.assets/image-20230729140313138.png" alt="image-20230729140313138" style="zoom:80%;"><p>在任何位置打开终端输入<code>node -v</code>出现版本号表示安装成功，查看npm是否安装成功<code>npm -v</code></p><p><img src="/images/Nodejs%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.assets/image-20230729140955297.png" alt=""></p><h4 id="问题">问题</h4><p>若未正常显示则需手动添加环境变量，搜索环境变量打开</p><img src="/images/Nodejs安装教程.assets/image-20230729141414602.png" alt="image-20230729141414602" style="zoom: 67%;"><img src="/images/Nodejs安装教程.assets/image-20230729141750966.png" alt="image-20230729141750966" style="zoom:67%;"><img src="/images/Nodejs安装教程.assets/image-20230729141718857.png" alt="image-20230729141718857" style="zoom:80%;"><p>进入编辑新建中添加刚刚的安装路径</p><img src="/images/Nodejs安装教程.assets/image-20230729141955472.png" alt="image-20230729141955472" style="zoom: 67%;"><h3 id="修改npm的下载位置">修改npm的下载位置</h3><p>在刚刚的安装路径下创建两个文件夹<code>ndoe_cache</code>和<code>node_global</code></p><p><img src="/images/Nodejs%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.assets/image-20230729142502065.png" alt=""></p><p>设置全局模块的安装路径到 “node_global” 文件夹</p><pre class=" language-shell"><code class="language-shell">npm config set prefix "D:\nodejs\node_global"</code></pre><p>设置缓存到 “node_cache” 文件夹</p><pre class=" language-shell"><code class="language-shell">npm config set cache "D:\nodejs\node_cache"</code></pre><p>将全局模块安装路径添加到环境变量</p><img src="/images/Nodejs安装教程.assets/image-20230729142912612.png" alt="image-20230729142912612" style="zoom:67%;"><p>通过下面的命令查看是否修改成功</p><pre class=" language-shell"><code class="language-shell">npm get prefixnpm get cache</code></pre><p><img src="/images/Nodejs%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.assets/image-20230729143203332.png" alt=""></p><h3 id="修改文件夹权限">修改文件夹权限</h3><p>修改<code>node_global</code>文件夹的权限编辑属性，</p><p>如果不进行这一步那么使用npm命令就必须使用<strong>管理员权限</strong>打开终端，才能使用<code>npm</code>命令</p><img src="/images/Nodejs安装教程.assets/image-20230729143628296.png" alt="image-20230729143628296" style="zoom: 80%;"><img src="/images/Nodejs安装教程.assets/image-20230729143639973.png" alt="image-20230729143639973" style="zoom: 80%;"><p>本文章参考自：<a href="https://blog.csdn.net/qq_42006801/article/details/124830995">Node.js安装与配置（详细步骤）_nodejs安装及环境配置</a></p><p>仅供自己留做存档用</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ndoejs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>go后端框架</title>
       <link href="/2023/07/28/go-hou-duan-kuang-jia/"/>
       <url>/2023/07/28/go-hou-duan-kuang-jia/</url>
