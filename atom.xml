@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.top/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.top/"/>
-  <updated>2023-07-29T14:26:14.790Z</updated>
+  <updated>2023-07-31T07:57:15.233Z</updated>
   <id>https://wisansiiz.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+github搭建个人博客</title>
+    <link href="https://wisansiiz.top/2023/07/30/hexo-github/"/>
+    <id>https://wisansiiz.top/2023/07/30/hexo-github/</id>
+    <published>2023-07-30T14:21:21.000Z</published>
+    <updated>2023-07-31T07:57:15.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;拥有一个Github账号&quot;&gt;拥有一个Github账号&lt;/h2&gt;
+&lt;h3 id=&quot;创建仓库&quot;&gt;创建仓库&lt;/h3&gt;
+&lt;p&gt;创建一个名为&lt;code&gt;用户名.github.io&lt;/code&gt;的仓库&lt;/p&gt;
+&lt;p&gt;注意：使用小写用户名&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://wisansiiz.top/categories/hexo/"/>
+    
+    
+    <category term="教程" scheme="https://wisansiiz.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="hexo" scheme="https://wisansiiz.top/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Nodejs安装教程</title>
