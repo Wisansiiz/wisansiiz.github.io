@@ -822,7 +822,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-03
+                    2023-08-10
                 </div>
                 
 
@@ -853,25 +853,29 @@
             <div id="articleContent">
                 <h2 id="拥有一个Github账号">拥有一个Github账号</h2>
 <h3 id="创建仓库">创建仓库</h3>
-<p>创建一个名为<code>用户名.github.io</code>的仓库</p>
-<p>注意：使用小写用户名</p>
+<p><img src="/images/hexo+github/image-20230810194616812.png" alt=""></p>
+<blockquote>
+<p>创建一个名为<code>用户名.github.io</code>的仓库，使用小写用户名。因为我这里创建过了，所以显示已存在</p>
+</blockquote>
+<p><img src="/images/hexo+github/image-20230810194733661.png" alt=""></p>
 <h3 id="生成连接Github的密钥">生成连接Github的密钥</h3>
 <p>在终端中输入以下命令根据提示生成公钥和密钥</p>
 <pre class=" language-shell"><code class="language-shell">ssh-keygen -t rsa -C "GitHub注册邮箱"
 </code></pre>
-<p>在C盘的Users\计算机用户名\.ssh下会生成<code>id_rsa.pub</code>文件为公钥</p>
+<p>直接回车默认它的选项就会在C盘的Users\计算机用户名\.ssh下生成<code>id_rsa.pub</code>文件为公钥</p>
 <p><img src="/images/hexo+github/image-20230731100536039.png" alt=""></p>
 <p>在个人设置界面找到<code>SSH and GPG keys</code>，新建一个SSH key</p>
 <p><img src="/images/hexo+github/image-20230731100044379.png" alt=""></p>
-<p>打开刚刚的<code>id_rsa.pub</code>文件，将其中的内容全部粘贴到<code>key</code>中，<code>titlle</code>任意</p>
+<p>使用记事本打开刚刚的<code>id_rsa.pub</code>文件，将其中的内容全部粘贴到<code>key</code>中，<code>titlle</code>任意</p>
 <p>在终端中使用该命令查看是否连接成功</p>
 <pre class=" language-shell"><code class="language-shell">ssh git@github.com
 </code></pre>
 <p><img src="/images/hexo+github/image-20230731101312053.png" alt=""></p>
 <h2 id="安装Git">安装Git</h2>
+<p>一直下一步安装即可:<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git">Git - 安装 Git</a></p>
 <h3 id="配置基本信息">配置基本信息</h3>
-<pre class=" language-shell"><code class="language-shell">git config --global username "GitHub用户名"
-git config --global useremail "GitHub注册邮箱"
+<pre class=" language-shell"><code class="language-shell">git config --global user.name "GitHub用户名"
+git config --global user.email "GitHub注册邮箱"
 </code></pre>
 <h2 id="安装Nodejs">安装Nodejs</h2>
 <p>在这里有写就不再这里赘述：<a href="https://wisansiiz.top/2023/07/29/nodejs-an-zhuang-jiao-cheng/">Nodejs安装教程</a></p>
@@ -893,7 +897,7 @@ hexo s # server 启动服务
 <img src="/images/hexo+github/image-20230731141648325.png" alt="默认样式" style="zoom: 67%;">
 <h3 id="安装主题">安装主题</h3>
 <p>这时你可能就会发现默认的博客样式相当的简陋，这时候我们就需要为hexo安装主题</p>
-<p>你可以在github上寻找你想要的主题或者是在hexo的<a href="https://hexo.io/themes/">主题官网</a>上寻找你想要的主题</p>
+<p>你可以在github上寻找你想要的主题或者是在hexo的<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题官网</a>上寻找你想要的主题</p>
 <p>这里我们以比较流行的<code>hexo-theme-matery</code>主题作为例子演示</p>
 <p>通过git命令将主题的github仓库克隆到<code>themes</code>文件夹下：</p>
 <pre class=" language-shell"><code class="language-shell">git clone https://github.com/blinkfox/hexo-theme-matery.git themes/hexo-theme-matery
@@ -910,7 +914,7 @@ hexo s
 </blockquote>
 <p>此时重新打开浏览器你就会发现出现漂亮的主题了</p>
 <img src="/images/hexo+github/image-20230731143843978.png" alt="主题页面展示" style="zoom:67%;">
-<p>该主题的相关配置在作者的github以及博客中都有较为详细的说明<a href="https://github.com/blinkfox/hexo-theme-matery">主题GitHub</a>，<a href="https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/#!">主题博客</a></p>
+<p>该主题的相关配置在作者的github以及博客中都有较为详细的说明<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">主题GitHub</a>，<a target="_blank" rel="noopener" href="https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/#!">主题博客</a></p>
 <h2 id="项目部署">项目部署</h2>
 <p>上面说了这么多，那么如何将项目部署到GitHub上跑起来呢</p>
 <h3 id="修改配置文件">修改配置文件</h3>
@@ -937,7 +941,7 @@ hexo d # deploy 部署
 <p>打开它在里面填入你的域名，如果你这里使用的是顶级域名那么你能使用它直接访问，如果使用子域名那么必须输入对应的子域名才能访问</p>
 <blockquote>
 <p>该步骤是将每次推送到GitHub上时让<code>GitHub Pages</code>能够自动绑定域名，要不然每次推送都要手动重新到仓库设置中绑定域名（domain）</p>
-<p>添加完该文件要推送一次，将该文件更新到GitHub，请执行<a href="#使用命令推送" target="_self">使用命令推送</a>中使用的三个命令进行操作</p>
+<p>添加完该文件要推送一次，将该文件更新到GitHub，请执行<a href="#%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8E%A8%E9%80%81">使用命令推送</a>中使用的三个命令进行操作</p>
 </blockquote>
 <h3 id="域名解析">域名解析</h3>
 <p>如何让别人访问你的域名的时候网络能够知道你访问的是<code>用户名.github.io</code>你的网址，这时候就需要CDN域名解析，在你购买域名的服务商那里解析域名，绑定两个参数，这里以<strong>腾讯云</strong>为例，记录类型A的记录值填你<code>ping 用户名.github.io</code>返回得到的ip地址，记录类型CNAME主机记录填写www(其他的应该也都可以)，记录值填<code>用户名.github.io</code>。不知道是否有其他方法，但是像我这么填是可以的</p>
