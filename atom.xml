@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.github.io/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.github.io/"/>
-  <updated>2023-08-18T10:55:49.927Z</updated>
+  <updated>2023-08-20T08:08:33.015Z</updated>
   <id>https://wisansiiz.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>scoop包管理器</title>
+    <link href="https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/"/>
+    <id>https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/</id>
+    <published>2023-08-20T06:36:38.000Z</published>
+    <updated>2023-08-20T08:08:33.015Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;在Windows上使用包管理器&quot;&gt;在Windows上使用包管理器&lt;/h2&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://wisansiiz.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="scoop" scheme="https://wisansiiz.github.io/tags/scoop/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java开发知识点</title>
     <link href="https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/"/>
     <id>https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/</id>
     <published>2023-08-03T09:04:45.000Z</published>
-    <updated>2023-08-18T10:55:49.927Z</updated>
+    <updated>2023-08-19T16:48:31.412Z</updated>
     
     
       
@@ -48,7 +74,7 @@
     <link href="https://wisansiiz.github.io/2023/07/30/hexo-github/"/>
     <id>https://wisansiiz.github.io/2023/07/30/hexo-github/</id>
     <published>2023-07-30T14:21:21.000Z</published>
-    <updated>2023-08-19T09:15:33.615Z</updated>
+    <updated>2023-08-19T15:24:22.437Z</updated>
     
     
       
@@ -77,7 +103,7 @@
     <link href="https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/"/>
     <id>https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/</id>
     <published>2023-07-29T05:58:51.787Z</published>
-    <updated>2023-08-19T09:21:46.516Z</updated>
+    <updated>2023-08-19T11:05:58.500Z</updated>
     
     
       
@@ -107,7 +133,7 @@
     <link href="https://wisansiiz.github.io/2023/07/28/go-hou-duan-kuang-jia/"/>
     <id>https://wisansiiz.github.io/2023/07/28/go-hou-duan-kuang-jia/</id>
     <published>2023-07-28T04:57:12.497Z</published>
-    <updated>2023-07-29T06:49:37.302Z</updated>
+    <updated>2023-08-19T11:09:29.549Z</updated>
     
     
       
