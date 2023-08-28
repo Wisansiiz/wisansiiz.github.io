@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.github.io/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.github.io/"/>
-  <updated>2023-08-20T08:08:33.015Z</updated>
+  <updated>2023-08-28T07:59:13.581Z</updated>
   <id>https://wisansiiz.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在win10中使用终端默认打开powershell</title>
+    <link href="https://wisansiiz.github.io/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/"/>
+    <id>https://wisansiiz.github.io/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/</id>
+    <published>2023-08-22T03:45:24.000Z</published>
+    <updated>2023-08-28T07:59:13.581Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://learn.microsoft.com/zh-cn/windows/terminal/install&quot;&gt;Windows 终端安装 | Microsoft</summary>
+        
+      
+    
+    
+    
+    
+    <category term="教程" scheme="https://wisansiiz.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>scoop包管理器</title>
     <link href="https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/"/>
     <id>https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/</id>
     <published>2023-08-20T06:36:38.000Z</published>
-    <updated>2023-08-20T08:08:33.015Z</updated>
+    <updated>2023-08-28T08:05:29.050Z</updated>
     
     
       
@@ -29,7 +52,7 @@
         
         
     <summary type="html">&lt;h2 id=&quot;在Windows上使用包管理器&quot;&gt;在Windows上使用包管理器&lt;/h2&gt;
-&lt;p&gt;&lt;img</summary>
+&lt;p&gt;&lt;img src=&quot;/images/scoop%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/image-20230820143944100.png&quot;</summary>
         
       
     
@@ -47,7 +70,7 @@
     <link href="https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/"/>
     <id>https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/</id>
     <published>2023-08-03T09:04:45.000Z</published>
-    <updated>2023-08-19T16:48:31.412Z</updated>
+    <updated>2023-08-25T06:00:23.126Z</updated>
     
     
       
@@ -74,7 +97,7 @@
     <link href="https://wisansiiz.github.io/2023/07/30/hexo-github/"/>
     <id>https://wisansiiz.github.io/2023/07/30/hexo-github/</id>
     <published>2023-07-30T14:21:21.000Z</published>
-    <updated>2023-08-19T15:24:22.437Z</updated>
+    <updated>2023-08-28T08:08:18.455Z</updated>
     
     
       
@@ -83,7 +106,7 @@
         
     <summary type="html">&lt;h2 id=&quot;拥有一个Github账号&quot;&gt;拥有一个Github账号&lt;/h2&gt;
 &lt;h3 id=&quot;创建仓库&quot;&gt;创建仓库&lt;/h3&gt;
-&lt;p&gt;&lt;img</summary>
+&lt;p&gt;&lt;img src=&quot;/images/hexo+github/image-20230810194616812.png&quot;</summary>
         
       
     
@@ -103,7 +126,7 @@
     <link href="https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/"/>
     <id>https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/</id>
     <published>2023-07-29T05:58:51.787Z</published>
-    <updated>2023-08-19T11:05:58.500Z</updated>
+    <updated>2023-08-28T08:07:49.206Z</updated>
     
     
       

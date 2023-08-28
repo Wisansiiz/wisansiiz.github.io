@@ -818,21 +818,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-20
+                    2023-08-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    899
+                    1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -969,6 +969,37 @@
 </li>
 <li class="lvl-3">
 <p>页面锁：开销和加锁时间界于表锁和行锁之间；会出现死锁；锁定粒度界于表锁和行锁之间，并发度一般。</p>
+</li>
+</ol>
+<h3 id="锁的优化策略">锁的优化策略</h3>
+<ol>
+<li class="lvl-3">
+<p>读写分离</p>
+</li>
+<li class="lvl-3">
+<p>分段加锁</p>
+</li>
+<li class="lvl-3">
+<p>减少锁持有的时间</p>
+</li>
+<li class="lvl-3">
+<p>多个线程尽量以相同的顺序去获取资源 不能将锁的粒度过于细化，不然可能会出现线程的加锁和释放次数过多，反而效 率不如一次加一把大锁。</p>
+</li>
+</ol>
+<h3 id="实践中如何优化-MySQL">实践中如何优化 MySQL</h3>
+<p>最好是按照以下顺序优化：</p>
+<ol>
+<li class="lvl-3">
+<p>SQL语句及索引的优化</p>
+</li>
+<li class="lvl-3">
+<p>数据库表结构的优化</p>
+</li>
+<li class="lvl-3">
+<p>系统配置的优化</p>
+</li>
+<li class="lvl-3">
+<p>硬件的优化</p>
 </li>
 </ol>
 
