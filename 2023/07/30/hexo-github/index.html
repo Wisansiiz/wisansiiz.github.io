@@ -822,21 +822,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-28
+                    2023-09-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -947,9 +947,12 @@ hexo d # deploy 部署
 <p>添加完该文件要推送一次，将该文件更新到GitHub，请执行<a href="#%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E6%8E%A8%E9%80%81">使用命令推送</a>中使用的三个命令进行操作</p>
 </blockquote>
 <h3 id="域名解析">域名解析</h3>
-<p>如何让别人访问你的域名的时候网络能够知道你访问的是<code>用户名.github.io</code>你的网址，这时候就需要CDN域名解析，在你购买域名的服务商那里解析域名，绑定两个参数，这里以<strong>腾讯云</strong>为例，记录类型A的记录值填你<code>ping 用户名.github.io</code>返回得到的ip地址，记录类型CNAME主机记录填写www(其他的应该也都可以)，记录值填<code>用户名.github.io</code>。不知道是否有其他方法，但是像我这么填是可以的</p>
+<p>如何让别人访问你的域名的时候网络能够知道你访问的是<code>用户名.github.io</code>你的网址，这时候就需要CDN域名解析，在你购买域名的服务商那里解析域名，绑定两个参数，这里以<strong>腾讯云</strong>为例<del>，记录类型A的记录值填你<code>ping 用户名.github.io</code>返回得到的ip地址</del>，记录类型CNAME主机记录填写www(其他的也都可以)，记录值填<code>用户名.github.io</code>。</p>
 <img src="/images/hexo+github/image-20230803100322982.png" alt="域名解析配置" style="zoom:80%;">
 <p>绑定成功后等待一段时间就能通过的配置的域名访问该博客</p>
+<div class="warning">
+<p>在腾讯云下域名解析的CNAME主机名为二级域名地址，如果你在上述部署到Github的CNAME文件中填写的是二级域名如 <code>blog.xxx.com</code> 那么在解析时也要填写对应的二级域名即主机记录为blog</p>
+</div>
 
                 
             </div>
