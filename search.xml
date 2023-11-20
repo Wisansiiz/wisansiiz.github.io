@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>nvm报错</title>
+      <link href="/2023/11/20/nvm-bao-cuo/"/>
+      <url>/2023/11/20/nvm-bao-cuo/</url>
+      
+        <content type="html"><![CDATA[<p>重装系统后出现如下报错 <code>nvm报错： ERROR open \settings.txt: The system cannot find the file specified</code></p><h2 id="解决方法">解决方法</h2><h3 id="方法一：">方法一：</h3><p>下载地址：<a href="https://github.com/coreybutler/nvm-windows/releases">Releases · coreybutler/nvm-windows (github.com)</a><br><img src="/images/nvm报错/nvm下载列表.png" alt="nvm下载列表" style="zoom:80%;"></p><p>重新下载安装nvm会重新配置环境变量</p><h3 id="方法二：">方法二：</h3><img src="/images/nvm报错/Snipaste_2023-11-20_19-51-49.png" style="zoom:80%;"><p>里面是上次配置的路径：</p><pre><code>root: D:\Environment\nvmpath: D:\Environment\nodejs</code></pre><p>将路径添加进环境变量</p><pre><code>NVM_HOMED:\Environment\nvmNVM_SYMLINKD:\Environment\nodejs</code></pre><p><img src="/images/nvm%E6%8A%A5%E9%94%99/Snipaste_2023-11-20_19-56-34.png" alt="环境变量"></p><p>将变量引入 <code>path</code></p><img src="/images/nvm报错/Snipaste_2023-11-20_20-03-06.png" alt="引入环境变量" style="zoom:80%;"><p>现在可以使用 <code>nvm</code> 进行 <code>node</code> 的安装</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ndoejs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nvm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置ipv6并进行ddns动态解析(咕咕)</title>
+      <link href="/2023/09/07/pei-zhi-ipv6-bing-jin-xing-ddns-dong-tai-jie-xi/"/>
+      <url>/2023/09/07/pei-zhi-ipv6-bing-jin-xing-ddns-dong-tai-jie-xi/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> ipv6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在win10中使用终端默认打开powershell</title>
       <link href="/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/"/>
       <url>/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/</url>
@@ -146,6 +198,31 @@
             <tag> GO </tag>
             
             <tag> 后端框架 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通过可视化界面创建vue项目</title>
+      <link href="/2023/02/14/tong-guo-ke-shi-hua-jie-mian-chuang-jian-vue-xiang-mu/"/>
+      <url>/2023/02/14/tong-guo-ke-shi-hua-jie-mian-chuang-jian-vue-xiang-mu/</url>
+      
+        <content type="html"><![CDATA[<h1>通过可视化界面创建vue项目</h1><h3 id="1、安装nodejs">1、安装nodejs</h3><p><a href="https://nodejs.org/en/">Node.js (nodejs.org)</a></p><h3 id="2、通过vue-ui可视化创建vue项目">2、通过vue ui可视化创建vue项目</h3><p>在nodejs文件夹下创建node_cache和node_global文件夹</p><p>添加nodejs和node_global文件夹到环境变量</p><img src="/images/通过可视化界面创建vue项目/image-20230214085419980.png" alt="image-20230214085419980" style="zoom:80%;"><p>设置镜像源</p><pre class=" language-shell"><code class="language-shell">npm config set registry https://registry.npm.taobao.org</code></pre><p>更新npm</p><pre class=" language-shell"><code class="language-shell">npm install -g npm</code></pre><p>安装webpack</p><pre class=" language-shell"><code class="language-shell">npm install -g webpack</code></pre><p>安装cli和cli-init</p><pre class=" language-shell"><code class="language-shell">npm install -g @vue/clinpm install -g @vue/cli-init</code></pre><p>使用<code>vue ui</code>启动创建vue项目</p><p><img src="/images/%E9%80%9A%E8%BF%87%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/image-20230914122308878.png" alt="image-20230914122308878"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
             
         </tags>
       

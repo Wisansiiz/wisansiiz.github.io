@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.github.io/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.github.io/"/>
-  <updated>2023-08-28T07:59:13.581Z</updated>
+  <updated>2023-11-20T12:32:48.000Z</updated>
   <id>https://wisansiiz.github.io/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>nvm报错</title>
+    <link href="https://wisansiiz.github.io/2023/11/20/nvm-bao-cuo/"/>
+    <id>https://wisansiiz.github.io/2023/11/20/nvm-bao-cuo/</id>
+    <published>2023-11-20T11:37:39.000Z</published>
+    <updated>2023-11-20T12:32:48.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;重装系统后出现如下报错 &lt;code&gt;nvm报错： ERROR open &#92;settings.txt: The system cannot find the file specified&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;解决方法&lt;/h2&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="ndoejs" scheme="https://wisansiiz.github.io/categories/ndoejs/"/>
+    
+    
+    <category term="nvm" scheme="https://wisansiiz.github.io/tags/nvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置ipv6并进行ddns动态解析(咕咕)</title>
+    <link href="https://wisansiiz.github.io/2023/09/07/pei-zhi-ipv6-bing-jin-xing-ddns-dong-tai-jie-xi/"/>
+    <id>https://wisansiiz.github.io/2023/09/07/pei-zhi-ipv6-bing-jin-xing-ddns-dong-tai-jie-xi/</id>
+    <published>2023-09-07T10:34:46.000Z</published>
+    <updated>2023-09-14T07:49:44.000Z</updated>
+    
+    
+    
+    
+    <category term="计算机网络" scheme="https://wisansiiz.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="教程" scheme="https://wisansiiz.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="ipv6" scheme="https://wisansiiz.github.io/tags/ipv6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在win10中使用终端默认打开powershell</title>
     <link href="https://wisansiiz.github.io/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/"/>
     <id>https://wisansiiz.github.io/2023/08/22/zai-win10-zhong-shi-yong-zhong-duan-mo-ren-da-kai-powershell/</id>
     <published>2023-08-22T03:45:24.000Z</published>
-    <updated>2023-08-28T07:59:13.581Z</updated>
+    <updated>2023-08-28T07:59:14.000Z</updated>
     
     
       
@@ -44,7 +90,7 @@
     <link href="https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/"/>
     <id>https://wisansiiz.github.io/2023/08/20/scoop-bao-guan-li-qi/</id>
     <published>2023-08-20T06:36:38.000Z</published>
-    <updated>2023-08-28T08:05:29.050Z</updated>
+    <updated>2023-08-28T08:05:30.000Z</updated>
     
     
       
@@ -70,7 +116,7 @@
     <link href="https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/"/>
     <id>https://wisansiiz.github.io/2023/08/03/java-kai-fa-zhi-shi-dian/</id>
     <published>2023-08-03T09:04:45.000Z</published>
-    <updated>2023-08-25T06:00:23.126Z</updated>
+    <updated>2023-08-25T06:00:24.000Z</updated>
     
     
       
@@ -97,7 +143,7 @@
     <link href="https://wisansiiz.github.io/2023/07/30/hexo-github/"/>
     <id>https://wisansiiz.github.io/2023/07/30/hexo-github/</id>
     <published>2023-07-30T14:21:21.000Z</published>
-    <updated>2023-09-02T04:01:06.975Z</updated>
+    <updated>2023-09-02T04:01:08.000Z</updated>
     
     
       
@@ -125,8 +171,8 @@
     <title>Nodejs安装教程</title>
     <link href="https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/"/>
     <id>https://wisansiiz.github.io/2023/07/29/nodejs-an-zhuang-jiao-cheng/</id>
-    <published>2023-07-29T05:58:51.787Z</published>
-    <updated>2023-08-28T08:07:49.206Z</updated>
+    <published>2023-07-28T16:00:00.000Z</published>
+    <updated>2023-09-14T07:49:44.000Z</updated>
     
     
       
@@ -155,8 +201,8 @@
     <title>go后端框架</title>
     <link href="https://wisansiiz.github.io/2023/07/28/go-hou-duan-kuang-jia/"/>
     <id>https://wisansiiz.github.io/2023/07/28/go-hou-duan-kuang-jia/</id>
-    <published>2023-07-28T04:57:12.497Z</published>
-    <updated>2023-08-19T11:09:29.549Z</updated>
+    <published>2023-07-27T16:00:00.000Z</published>
+    <updated>2023-09-14T07:49:44.000Z</updated>
     
     
       
@@ -178,6 +224,34 @@
     <category term="GO" scheme="https://wisansiiz.github.io/tags/GO/"/>
     
     <category term="后端框架" scheme="https://wisansiiz.github.io/tags/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过可视化界面创建vue项目</title>
+    <link href="https://wisansiiz.github.io/2023/02/14/tong-guo-ke-shi-hua-jie-mian-chuang-jian-vue-xiang-mu/"/>
+    <id>https://wisansiiz.github.io/2023/02/14/tong-guo-ke-shi-hua-jie-mian-chuang-jian-vue-xiang-mu/</id>
+    <published>2023-02-14T00:55:02.000Z</published>
+    <updated>2023-09-14T07:49:44.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;通过可视化界面创建vue项目&lt;/h1&gt;
+&lt;h3 id=&quot;1、安装nodejs&quot;&gt;1、安装nodejs&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js (nodejs.org)&lt;/a&gt;&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://wisansiiz.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vue" scheme="https://wisansiiz.github.io/tags/vue/"/>
     
   </entry>
   
