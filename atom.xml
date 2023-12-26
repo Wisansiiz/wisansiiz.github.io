@@ -6,7 +6,7 @@
   <link href="https://wisansiiz.github.io/atom.xml" rel="self"/>
   
   <link href="https://wisansiiz.github.io/"/>
-  <updated>2023-11-20T12:32:48.000Z</updated>
+  <updated>2023-12-26T12:58:22.000Z</updated>
   <id>https://wisansiiz.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python中的all()函数</title>
+    <link href="https://wisansiiz.github.io/2023/12/02/python-zhong-de-all-han-shu/"/>
+    <id>https://wisansiiz.github.io/2023/12/02/python-zhong-de-all-han-shu/</id>
+    <published>2023-12-02T03:37:31.000Z</published>
+    <updated>2023-12-26T12:58:22.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;python中的all()函数&lt;/h1&gt;
+&lt;p&gt;all() 函数用于判断给定的可迭代参数 iterable 中的所有元素是否都为 True，如果是返回 True，否则返回 False。&lt;/p&gt;
+&lt;p&gt;元素除了是 0、空、None、False 外都算</summary>
+        
+      
+    
+    
+    
+    
+    <category term="python" scheme="https://wisansiiz.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>去除Windows右键AMD驱动图标</title>
+    <link href="https://wisansiiz.github.io/2023/12/01/qu-chu-windows-you-jian-amd-tu-biao/"/>
+    <id>https://wisansiiz.github.io/2023/12/01/qu-chu-windows-you-jian-amd-tu-biao/</id>
+    <published>2023-12-01T11:57:11.000Z</published>
+    <updated>2023-12-26T12:58:38.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;去除Windows右键AMD驱动图标&lt;/h1&gt;
+&lt;h2 id=&quot;打开注册表&quot;&gt;打开注册表&lt;/h2&gt;
+&lt;p&gt;右键win图标找到 &lt;strong&gt;运行&lt;/strong&gt; 输入 &lt;code&gt;regedit&lt;/code&gt; 打开注册表或在windows搜索框中搜索</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Windows" scheme="https://wisansiiz.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>nvm报错</title>

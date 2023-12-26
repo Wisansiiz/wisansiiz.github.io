@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>python中的all()函数</title>
+      <link href="/2023/12/02/python-zhong-de-all-han-shu/"/>
+      <url>/2023/12/02/python-zhong-de-all-han-shu/</url>
+      
+        <content type="html"><![CDATA[<h1>python中的all()函数</h1><p>all() 函数用于判断给定的可迭代参数 iterable 中的所有元素是否都为 True，如果是返回 True，否则返回 False。</p><p>元素除了是 0、空、None、False 外都算 True。</p><p>函数等价于：</p><pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">all</span><span class="token punctuation">(</span>iterable<span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">for</span> element <span class="token keyword">in</span> iterable<span class="token punctuation">:</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">if</span> <span class="token operator">not</span> element<span class="token punctuation">:</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">return</span> <span class="token boolean">False</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">return</span> <span class="token boolean">True</span></code></pre><p>可迭代参数 <code>iterable</code> 中的表达式全部为 <strong>True</strong> ，例如：</p><pre class=" language-python"><code class="language-python">words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>all<span class="token punctuation">(</span>x <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> words<span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># x % 2 == 0 全为 True，则返回值为 True 或 1</span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>去除Windows右键AMD驱动图标</title>
+      <link href="/2023/12/01/qu-chu-windows-you-jian-amd-tu-biao/"/>
+      <url>/2023/12/01/qu-chu-windows-you-jian-amd-tu-biao/</url>
+      
+        <content type="html"><![CDATA[<h1>去除Windows右键AMD驱动图标</h1><h2 id="打开注册表">打开注册表</h2><p>右键win图标找到 <strong>运行</strong> 输入 <code>regedit</code> 打开注册表或在windows搜索框中搜索 <strong>注册表</strong> 打开</p><h2 id="搜索驱动路径">搜索驱动路径</h2><p>计算机\HKEY_CLASSES_ROOT\PackagedCom\Package\AdvancedMicroDevicesInc-RSXCM_22.10.0.0_x64__fhmx3h6dzfmvj\Server\0</p><p>其中 <code>AdvancedMicroDevicesInc-RSXCM_22.10.0.0_x64__fhmx3h6dzfmvj</code> 为驱动号，找到对应的即可</p><p><code>ApplicationId : AMDRadeonSoftwareDesktop</code></p><h2 id="修改参数数值">修改参数数值</h2><p>将该值删除或修改名称例如：ApplicationId --&gt; 0ApplicationId</p><p>计算机\HKEY_CLASSES_ROOT\PackagedCom\Package\AdvancedMicroDevicesInc-RSXCM_22.10.0.0_x64__fhmx3h6dzfmvj\Server\1</p><p>同上</p><p>将该值删除或修改名称例如：ApplicationId --&gt; 0ApplicationId</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>nvm报错</title>
       <link href="/2023/11/20/nvm-bao-cuo/"/>
       <url>/2023/11/20/nvm-bao-cuo/</url>
